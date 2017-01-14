@@ -9,11 +9,12 @@ set smartcase " 검색시 대소문자 구별
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent " 자동 들여쓰기
 set smartindent " #if has to be first on the line
-set cindent " c style auto indent
+" set cindent " c style auto indent
 set shiftwidth=4 " 자동 들여쓰기 너비 설정
 set softtabstop=4 " 탭을 누를 때 실제로 벌어지는 간격
 set mouse=a “ Use mouse or not
-set ts=4 "tab size
+set ts=4 " tab size
+set expandtab " On pressing tab, insert 4 spaces
 
 " fold functions by syntax.
 " open a folded function using 'zo'

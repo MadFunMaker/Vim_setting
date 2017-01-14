@@ -1,20 +1,22 @@
-" General
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set history=256 " Sets how many lines of history VIM has to remember
-set autoread " 작업 중인 파일 외부에서 변경됬을 경우 자동으로 불러옴
-set autowrite " 다른 파일로 넘어갈 때 자동 저장
-set smartcase " 검색시 대소문자 구별
+"=== INDENT ===
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set sts=4
 
-" Convenience
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set autoindent " 자동 들여쓰기
-set smartindent " #if has to be first on the line
-" set cindent " c style auto indent
-set shiftwidth=4 " 자동 들여쓰기 너비 설정
-set softtabstop=4 " 탭을 누를 때 실제로 벌어지는 간격
-set mouse=a “ Use mouse or not
-set ts=4 " tab size
-set expandtab " On pressing tab, insert 4 spaces
+"=== VIEW ===
+set visualbell
+set number
+set ruler " Always show current position on the bottom right
+set title
+set wrap
+set cursorline
+set linebreak
+set showmatch " Show matching brackets when text indicator is over them
+set background=dark
+set guifont=NanumGothicCoding:h12:cHANGEUL
+syntax on
 
 " fold functions by syntax.
 " open a folded function using 'zo'
@@ -22,20 +24,28 @@ set expandtab " On pressing tab, insert 4 spaces
 set foldmethod=indent
 set foldnestmax=1
 
-" UI
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hls " 검색어 하이라이팅
-set showmatch " Show matching brackets when text indicator is over them
+"=== SEARCH ===
+set nowrapscan
+set hlsearch
+set ignorecase
 set incsearch " 한글자 입력할때마다 매치되는 부분 표시하기
-set ruler " Always show current position on the bottom right
-set nu
-set sw=1 " 스크롤바 너비
-set laststatus=2 " 상태바 표시 항상
-set ruler " 현재 커서 위치 표시
+set smartcase " 검색시 대소문자 구별
 
-" Colors and Fonts
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"=== EDIT ===
+set backspace=eol,start,indent
+set history=1000 " Sets how many lines of history VIM has to remember
+set fencs=ucs-bom,utf-8,euc-kr,latin1
+set fileencoding=utf-8
+set nobackup
+set autoread " 작업 중인 파일 외부에서 변경됬을 경우 자동으로 불러옴
+set autowrite " 다른 파일로 넘어갈 때 자동 저장
+set mouse=a " use mouse or not
+
+"=== VIM-AIRLINE ===
+set laststatus=2
+
+"=== COLOR SCHEME ===
 syntax on
+syntax enable
 colorscheme desert
-set background=dark
-set encoding=utf8
+

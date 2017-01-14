@@ -49,3 +49,21 @@ syntax on
 syntax enable
 colorscheme desert
 
+"<=== VUNDLE config Start ===>
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+let path='~/.vim/bundle'
+call vundle#begin(path)
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'L9'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
+Plugin 'The-NERD-Tree'
+Plugin 'Shougo/unite.vim'
+Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'tomasr/molokai'
+call vundle#end()
+filetype plugin indent on

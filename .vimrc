@@ -65,5 +65,19 @@ Plugin 'Shougo/unite.vim'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tomasr/molokai'
+" Vim에서 자동완성 기능(Ctrl + P)을 키입력하지 않더라도 자동으로 나타나게 AutoComplPop
+Plugin 'AutoComplPop'
+" 열려있는 소스파일의 클래스, 함수, 변수 정보 창 - Tag List
+Plugin 'taglist-plus'
 call vundle#end()
 filetype plugin indent on
+
+" Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" " :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ

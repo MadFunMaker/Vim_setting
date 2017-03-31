@@ -69,8 +69,16 @@ Plugin 'tomasr/molokai'
 Plugin 'AutoComplPop'
 " 열려있는 소스파일의 클래스, 함수, 변수 정보 창 - Tag List
 Plugin 'taglist-plus'
+
+" Python auto completion
+Plugin 'davidhalter/jedi-vim'
+
 call vundle#end()
 filetype plugin indent on
+
+" Python setting
+let python_version_3 = 1 " python 3 문법을 따른다고 옵션을 설정합니다.
+let python_highlight_all = 1 " 모든 강조(색상) 기능을 켭니다.
 
 " Brief help
 " " :PluginList       - lists configured plugins
